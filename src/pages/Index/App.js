@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import NavBar from '../../components/NavBar/index';
 import './App.css';
 
-class App extends Component {
-    render() {
-        return ( 
+function App() {
+    return (
+        <div>
+            <NavBar />
             <h1>ola mundo</h1>
-        );
-    }
+        </div>
+    );
 }
 
 export default App;

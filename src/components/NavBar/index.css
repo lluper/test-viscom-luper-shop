@@ -1,0 +1,38 @@
+nav{
+    min-width: 10vw;
+    background-color: #fff159;
+    padding: 4px 70px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navMenu{
+    justify-content: space-between;
+}
+
+.navmenu__item{
+    list-style: none;
+    display: flex;
+    min-width: 40px;
+    margin:5px 10px;
+
+}
+.navMenuRow{
+    margin-bottom: 10px;
+}
+
+.navMenu__link{ 
+    color: #6d6d6d;
+    transition: .4s;
+}
+
+.navMenu__link:hover{
+    color:#2c2c2c;
+}
+
+.navMenu__picture{
+    width: 350px;
+}
