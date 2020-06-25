@@ -1,0 +1,20 @@
+.navMenu{
+    background:#fff;
+}
+.navMenu > ul {
+    border-bottom: 1px solid var(--grey-offer);
+}
+.navMenu__item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 40px;
+    margin:5px 0px;
+    padding: 0 10px;
+    height: 40px;
+    justify-content: center;
+
+}
+.navMenu__item:hover{
+    background: var(--grey-offer);
+}
