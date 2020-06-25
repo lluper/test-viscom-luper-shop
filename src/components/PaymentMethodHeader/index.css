@@ -1,0 +1,41 @@
+.paymentMethodsHeader{
+    width: 100%;
+    background: var(--white);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom:40px;
+  }
+  .paymentMethodsHeader__col{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .paymentMethodsHeader__col.col-1{
+    border-left: 3px solid var(--blue-primary);
+    flex-direction: column;
+  }
+  .paymentMethodsHeader__options{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 992px) {
+
+  }
+    
+    /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+     .paymentMethodsHeader__col:nth-last-child(1),
+     .paymentMethodsHeader__col:nth-last-child(2),
+      .paymentMethodsHeader__col:nth-last-child(4){
+       display: none;
+     }
+     
+  }
+  
