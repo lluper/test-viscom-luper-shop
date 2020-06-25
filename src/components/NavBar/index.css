@@ -1,6 +1,6 @@
 nav{
     min-width: 10vw;
-    background-color: #fff159;
+    background-color: var(--yellow-primary);
     padding: 4px 70px;
 }
 ul{
@@ -25,14 +25,27 @@ ul{
 }
 
 .navMenu__link{ 
-    color: #6d6d6d;
+    color: var(--nav-link);
     transition: .4s;
 }
 
 .navMenu__link:hover{
-    color:#2c2c2c;
+    color:var(--nav-link-hover);
 }
 
 .navMenu__picture{
     width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  nav{
+      display: none;
+  }
+}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    nav{
+        display: none;
+    }
 }
