@@ -1,0 +1,123 @@
+.offersBlock{
+    min-height: 450px;
+  }
+  
+  .offersBlock__cardsContainer{
+    display: flex;
+    position: relative;
+  }
+  .offersBlock__card{
+    background: var(--white);
+    position: static;
+    flex:1;
+    margin: 0 20px;
+    align-self: flex-start;
+    transition: .5s;
+  }
+  .offersBlock__card:first-child{
+    margin-left: 0;
+  }
+  .offersBlock__card:last-child{
+    margin-right: 0;
+  }
+  .offersBlock__card__header{
+    border-bottom: 1px solid var(--card-division);
+    display: flex;
+    position: relative;
+    justify-content: center;
+  
+  }
+  .offersBlock__card__body{
+    padding: 10px 20px;
+  }
+  .offersBlock__card__productImage{
+    width: auto;
+    height: 100%;
+  }
+  .offersBlock__card__favorites{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top:20px;
+    right: 20px;
+  }
+  .offersBlock__card:hover .offersBlock__card__favorites{
+    display: block;
+  }
+  
+  .offersBlock__card__discount{
+    text-decoration: line-through;
+    color: var(--grey-offer);
+    font-size: 15px;
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  .offersBlock__card__priceAndPercent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .offersBlock__card__price{
+    margin-bottom: 3px;
+  }
+  .offersBlock__card__discountPercent{
+    color: var(--green-primary);
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  .offersBlock__card__installmentAmount{}
+  .offersBlock__card__productName{
+    margin-top: 20px;
+    display: none;
+    
+  }
+  
+  .offersBlock__card:hover
+  .offersBlock__card__discount{
+    display: block;
+  }
+  
+  .offersBlock__card:hover
+  .offersBlock__card__productName{
+    display: block;
+  }
+
+  @media screen and (max-width: 992px) {
+
+  }
+    /*  */
+    /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .offersBlock__cardsContainer{
+      flex-wrap: wrap;
+    }
+
+    .offersBlock__card__favorites,
+    .offersBlock__card__discount,
+    .offersBlock__card__productName/*  */
+    {
+      display: block;
+    }
+    .offersBlock__card{
+      margin: 0;
+      display: flex;
+      height: 150px;
+      border: 1px solid var(--grey-offer);
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      
+    }
+    .offersBlock__card__productImage{
+      width: auto;
+      max-width: 150px;
+      height: 100%;
+    }
+    .offersBlock__card__header{
+     height: 100%;
+    
+    }
+
+  }
