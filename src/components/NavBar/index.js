@@ -3,15 +3,15 @@ import Logo from '../../images/logo/logo-pt__large_plus.png';
 import MenuPicture from '../../images/menu-picture.png'
 import './index.css';
 import InputSearch from '../NavBar__InputSearch';
-
+import {Link} from 'react-router-dom'
 export default function NavBar() {
     return (
         <nav>
             <ul className="navMenu navMenuRow">
                 <li className="navmenu__item">
-                    <a href="#" className="navMenu__link">
+                    <Link to="/" href="#" className="navMenu__link">
                         <img src={Logo} className="navMenu__logo" />
-                    </a>
+                    </Link>
                 </li>
                 <li className="navmenu__item">
                     <InputSearch />
@@ -41,8 +41,7 @@ export default function NavBar() {
                     <li className="navmenu__item"><a href="#" className="navMenu__link">Crie sua conta</a></li>
                     <li className="navmenu__item"><a href="#" className="navMenu__link">Entrar</a></li>
                     <li className="navmenu__item"><a href="#" className="navMenu__link">Compras</a></li>
-                    <li className="navmenu__item"><a href="#" className="navMenu__link">CArrinho(icon)</a></li>
-                </ul>
+                    </ul>
             </ul>
         </nav>
     )

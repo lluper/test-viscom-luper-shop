@@ -1,14 +1,16 @@
 nav{
     min-width: 10vw;
     background-color: var(--yellow-primary);
-    padding: 4px 70px;
+    padding: 4px 50px;
 }
 ul{
     display: flex;
     flex-direction: row;
     
 }
-
+.inputCep{
+    width: 200px !important;
+}
 .navMenu{
     justify-content: space-between;
 }
@@ -37,13 +39,16 @@ ul{
     width: 350px;
 }
 
+.navMenu_account > li > a{
+    color: #3a3a3abe;
+}
+
 @media screen and (max-width: 992px) {
   nav{
       display: none;
   }
 }
   
-  /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
     nav{
         display: none;
