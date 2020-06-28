@@ -22,12 +22,16 @@
     color:#636363;
 }
 .inputSearch_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border:none;
     outline: none;
     background: transparent;
     padding: 5px;
     border-left: solid 1px #636363;
     height: 80%;
+    color: rgb(110, 105, 105);
 }
 
 @media screen and (max-width: 992px) {
@@ -42,7 +46,7 @@
         align-items: center;
     }
     .inputSearch_button{
-        display: none;
+        display: flex;
     }
 }
 @media screen and (max-width: 600px) {
@@ -57,6 +61,6 @@
         align-items: center;
     }
     .inputSearch_button{
-        display: none;
+        display: flex;
     }
 }
