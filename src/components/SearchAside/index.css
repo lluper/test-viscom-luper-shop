@@ -1,0 +1,137 @@
+.searchAsideFilter {
+    width: 30%;
+}
+.searchAsideFilter__block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.searchAsideFilter__breadcrumb {
+    font-size: 12px;
+    color: var(--discoverText);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.searchAsideFilter__resultNameAndTotal {}
+
+.searchAsideFilter__resultName {
+    font-size: 23px;
+}
+
+.searchAsideFilter__resultTotal {
+    color: var(--discoverText);
+}
+
+.searchAsideFilter__orderResult {}
+
+.searchAsideFilter__subTitle,
+.searchAsideFilter__resultName{
+    color: var(--grey-footer-list-title);
+    margin-bottom: 10px;
+}
+.searchAsideFilter__subTitle {
+    font-weight: 500;
+    font-size: 17px;
+}
+.orderResult__select{
+    width: 60%;
+    height: 40px;
+}
+.Dropdown-option {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px;
+  }
+  
+ 
+  .Dropdown-option:hover {
+    background-color: var(--blue-primary) !important;
+    color: #ffffff ;
+  }
+  
+  .Dropdown-option.is-selected {
+    background-color: #f2f9fc;
+    color: #333;
+  }
+  
+  .Dropdown-noresults {
+    box-sizing: border-box;
+    color: #ccc;
+    cursor: default;
+    display: block;
+    padding: 8px 10px;
+  }
+  
+
+.searchAsideFilter__stores{}
+
+.searchAsideFilter__item{
+    color: var(--discoverText);
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.searchAsideFilter__itemValue{
+    color: var(--discoverText);
+}
+
+.searchAsideFilter__brand{}
+
+.searchAsideFilter__model{}
+
+.searchAsideFilter__price{}
+
+.searchAsideFilter__priceForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchAsideFilter__priceInput{
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+}
+.searchAsideFilter__priceInput:focus{
+    outline:auto var(--blue-primary);
+}
+.searchAsideFilter__priceInput:nth-child(1){
+    margin-right: 10px;
+}
+.searchAsideFilter__priceInput:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.searchAsideFilter__priceSubmit{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:none;
+    background: var(--card-division);
+    color:var(--blue-primary);
+    transition: .4s;
+}
+.searchAsideFilter__priceSubmit:hover{
+    background: var(--blue-primary);
+    color:var(--card-division);
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .searchAsideFilter{
+        display: none;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+    .searchAsideFilter{
+        display: none;
+    }
+}
