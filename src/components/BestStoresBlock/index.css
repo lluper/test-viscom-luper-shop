@@ -48,6 +48,7 @@
   margin-top: 40px;
   text-align: center;
   text-transform: capitalize;
+  color: var(--discoverText);
 }
 
 .bestStoresBlock__cardStores__body {
@@ -64,7 +65,7 @@
 
 .bestStoresBlock__cardStores__productsImage {
   border-radius: 5px;
-  border: 1px solid var(--card-division);
+  border: 1px solid #61616125;
 }
 
 .bestStoresBlock__cardStores__link {
@@ -86,7 +87,25 @@
   color: var(--blue-primary);
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .bestStoresBlock__body {
+    flex-wrap: wrap;
+    background: var(--white);
+  }
+  .bestStoresBlock__cardStores {
+    margin: 10px 0px;
+    margin-top: 0;
+  }
+  .bestStoresBlock__cardStores__body {
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .bestStoresBlock__cardStores__header {
+    position: relative;
+    min-height: 100px;
+  }
+}
 
 
 @media screen and (max-width: 600px) {
