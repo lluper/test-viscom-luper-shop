@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css';
 
+import {Link} from 'react-router-dom'
 import Product1 from '../../images/products/product-1.jpg';
 
 export default function index() {
@@ -8,11 +9,11 @@ export default function index() {
         <section className="historyBlock">
         <div className="section__header">
             <h3 className="section__header__title">historico</h3>
-            <a href="#" className="section__header__viewAll">ver todo o historico</a>
+            <a href="#" className="section__header__viewAll">ver todo historico</a>
         </div>
 
         <div className="historyBlock__body">
-            <div className="historyBlock__card">
+            <Link to="/search" className="historyBlock__card">
                 <div className="historyBlock__card__image">
                     <img src={Product1} className="historyBlock__card__image__product" />
                     <span className="historyBlock__card__buttonDelete">x</span>
@@ -20,9 +21,9 @@ export default function index() {
                 <div className="historyBlock__card__titleBlock">
                     <h3 className="historyBlock__card__title">Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM</h3>
                 </div>
-            </div>
+            </Link>
 
-            <div className="historyBlock__card">
+            <Link to="/search" className="historyBlock__card">
                 <div className="historyBlock__card__image">
                     <img src={Product1} className="historyBlock__card__image__product" />
                     <span className="historyBlock__card__buttonDelete">x</span>
@@ -30,9 +31,9 @@ export default function index() {
                 <div className="historyBlock__card__titleBlock">
                     <h3 className="historyBlock__card__title">Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM</h3>
                 </div>
-            </div>
+            </Link>
 
-            <div className="historyBlock__card">
+            <Link to="/search" className="historyBlock__card">
                 <div className="historyBlock__card__image">
                     <img src={Product1} className="historyBlock__card__image__product" />
                     <span className="historyBlock__card__buttonDelete">x</span>
@@ -40,7 +41,7 @@ export default function index() {
                 <div className="historyBlock__card__titleBlock">
                     <h3 className="historyBlock__card__title">Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM</h3>
                 </div>
-            </div>
+            </Link>
         </div>
     </section>
     )

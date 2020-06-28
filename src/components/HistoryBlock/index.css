@@ -31,8 +31,8 @@
     display: none;
   }
   .historyBlock__card__image{
-    border-bottom: 1px solid var(--card-shadow);
-    width: 150px;
+    border-bottom: 1px solid #c7c7c78e;
+    width: 100%;
   }
   .historyBlock__card__image__product{
     width: 100%;
@@ -80,7 +80,7 @@
       overflow: visible;
       max-height: 100%;
       background: var(--white);
-      border: 1px solid var(--grey-offer);
+      border: 1px solid #c7c7c78e;
     }
     .historyBlock__card__titleBlock{
       padding: 5px;
