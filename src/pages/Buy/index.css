@@ -1,0 +1,565 @@
+.buyResultBlock {
+    background: var(--white);
+    border: 1px solid #a0a0a079;
+    margin: 10px 40px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 40px 25px;
+}
+
+.buyResultBlock li {
+    list-style: none;
+}
+
+.buyResultBlock__left {
+    width: 70%;
+    margin-left: 30px;
+}
+
+.buyResultBlock__image__product {
+    margin: 0 30px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.buyResultBlock__image__product--mobile {
+    display: none;
+}
+
+.buyResultBlock__image {}
+
+.buyResultBlock__moreSellerProducts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.buyResultBlock__title {
+    font-size: 26px;
+    font-weight: 400;
+    color: #313131;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.buyResultBlock__link {
+    color: var(--button-blue)
+}
+
+.buyResultBlock__specification__product {}
+
+.buyResultBlock__specification__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+}
+
+.buyResultBlock__specification__item {
+    margin: 10px;
+}
+
+.buyResultBlock__specification__item__title {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--discoverText);
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.buyResultBlock__specification__item__value {
+    font-size: 20px;
+    font-weight: 300;
+    color: #161616;
+    text-transform: capitalize;
+}
+
+.buyResultBlock__description__product {
+    margin-bottom: 25px;
+}
+
+.buyResultBlock__description__list {
+    display: flex;
+}
+
+.buyResultBlock__description__item {}
+
+.buyResultBlock__description__item__title {
+    color: #646464;
+    margin-bottom: 15px;
+}
+
+.buyResultBlock__description__item__value {
+    color: #646464;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.buyResultBlock__ratings__product {
+    margin-bottom: 25px;
+}
+
+.buyResultBlock__ratings___title {}
+
+.buyResultBlock__ratings__notes__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buyResultBlock__ratings__note {
+    color: #333;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.buyResultBlock__ratings__start {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.buyResultBlock__ratings__users {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.buyResultBlock__ratings__item {
+    margin: 10px 0;
+}
+
+.buyResultBlock__ratings__item__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--discoverText);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.buyResultBlock__ratings__item__description {
+    font-size: 15px;
+    font-weight: 100;
+    color: #646464;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.buyResultBlock__right {
+    width: 30%;
+    padding-left: 10px;
+}
+
+.buyBlock {}
+
+.buyBlock__productState {
+    color: #646464;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+.buyBlock__productName {
+    font-size: 24px;
+    color: #313131;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.buyBlock__productStar {
+    font-size: 25px;
+}
+
+.buyBlock__productPrice {
+    color: #313131;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.buyBlock__typePayment {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.buyBlock__payment {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.buyBlock__paymentParceled {
+    margin-bottom: 10px;
+}
+
+.buyBlock__icon {
+    color: #969494;
+    font-size: 18px;
+}
+
+.buyBlock__paymentCardList {}
+
+.buyBlock__paymentCard {}
+
+.buyBlock__paymentCardImage {
+    width: 50px;
+    height: 30px;
+}
+
+.buyBlock__shipping {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.buyBlock__shippingAvailable {
+    color: var(--green-primary);
+    font-weight: 200;
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.buyBlock__unitsQuantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buyBlock__unitsQuantity__title {
+    color: #646464;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.buyBlock__unitsQuantity__dropdown {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.buyBlock__buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buyBlock__buttons_buy, .buyBlock__buttons_add {
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    transition: .2s;
+}
+
+.buyBlock__buttons_buy {
+    color: var(--white);
+    background: var(--blue-primary);
+}
+
+.buyBlock__buttons_buy:hover {
+    color: var(--blue-primary);
+    background: var(--white);
+    border: 1px solid var(--blue-primary);
+}
+
+.buyBlock__buttons_add {
+    color: var(--blue-primary);
+    border: 1px solid var(--blue-primary);
+}
+
+.buyBlock__buttons_add:hover {
+    color: var(--white);
+    border: 1px solid var(--blue-primary);
+    background: var(--blue-primary);
+}
+
+.Dropdown-root-buy {
+    position: relative;
+}
+
+.Dropdown-control-buy {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border: 0px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: default;
+    outline: none;
+    padding: 8px 52px 8px 10px;
+    transition: all 200ms ease;
+    width: 100%;
+}
+
+.Dropdown-control:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.Dropdown-arrow-buy {
+    border-color: var(--blue-primary) transparent transparent;
+}
+
+.is-open .Dropdown-arrow {
+    border-color: var(--blue-primary) transparent #999;
+    border-width: 0 5px 5px;
+}
+
+.Dropdown-menu-buy {
+    background-color: white;
+    border: 1px solid rgba(204, 204, 204, 0.199);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.123);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Dropdown-menu-buy .Dropdown-group>.Dropdown-title {
+    padding: 8px 10px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.Dropdown-menu-buy .Dropdown-option {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px;
+    border-left: 5px solid var(--blue-primary);
+    margin: 0;
+}
+
+.Dropdown-menu-buy .Dropdown-option:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.Dropdown-menu-buy .Dropdown-option:hover {
+    background-color: #d8d8d896 !important;
+    color: #333;
+}
+
+.Dropdown-menu-buy .Dropdown-option.is-selected {
+    background-color: #f2f9fc;
+    color: #333;
+}
+
+.Dropdown-noresults {
+    box-sizing: border-box;
+    color: #ccc;
+    cursor: default;
+    display: block;
+    padding: 8px 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .buyResultBlock {
+        background: var(--white);
+        border: 0px solid #a0a0a079;
+        margin: 10px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        padding-top: 5px;
+    }
+    .buyResultBlock__left, .buyResultBlock__right {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .buyResultBlock__right {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0px;
+        margin-right: 5px;
+        border-bottom: 1px solid #9292928a;
+    }
+    .buyResultBlock__image__product {
+        display: none;
+    }
+    .buyResultBlock__image__product--mobile {
+        display: block;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .buyResultBlock__image__product--mobile__css {
+        min-height: 350px;
+    }
+    .buyResultBlock__image__product--mobile .image-gallery-slide {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .buyBlock__productState {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .buyBlock__productName {
+        word-break: break-all;
+        word-spacing: -1px;
+        font-size: 30px;
+        text-align: left;
+    }
+    .buyBlock__productPrice {
+        font-size: 45px;
+        font-weight: 200;
+    }
+    .buyBlock__paymentCardList {
+        display: flex;
+        flex-direction: row;
+    }
+    .buyBlock__shippingAvailable {
+        font-weight: 300;
+    }
+    .buyBlock__unitsQuantity__title {
+        font-weight: 300;
+    }
+    .buyBlock__buttons {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    .buyBlock__buttons_buy, .buyBlock__buttons_add {
+        letter-spacing: -1px;
+        margin: 10px 10px;
+        width: 100%;
+        height: 60px;
+    }
+    .buyResultBlock__title {
+        font-size: 20px;
+        color: #646464;
+        font-weight: 300;
+    }
+    .buyResultBlock__description__list {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #9292928a;
+    }
+    .buyResultBlock__ratings__item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #9292928a;
+    }
+    .buyResultBlock__ratings__item__description {
+        font-weight: 300;
+    }
+    .Dropdown-control-buy {
+        border: 1px solid #ccc;
+    }
+    .Dropdown-menu-buy .Dropdown-option {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .buyResultBlock {
+        background: var(--white);
+        border: 0px solid #a0a0a079;
+        margin: 10px 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 10px;
+        padding-top: 5px;
+    }
+    .buyResultBlock__left, .buyResultBlock__right {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .buyResultBlock__right {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0px;
+        margin-right: 5px;
+        border-bottom: 1px solid #9292928a;
+    }
+    .buyResultBlock__image__product {
+        display: none;
+    }
+    .buyResultBlock__image__product--mobile {
+        display: block;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .buyResultBlock__image__product--mobile__css {
+        min-height: 350px;
+    }
+    .buyResultBlock__image__product--mobile .image-gallery-slide {
+        height: 250px;
+        display: flex;
+        align-items: center;
+    }
+    .buyBlock__productState {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .buyBlock__productName {
+        word-break: break-all;
+        word-spacing: -1px;
+        font-size: 30px;
+        text-align: left;
+    }
+    .buyBlock__productPrice {
+        font-size: 45px;
+        font-weight: 200;
+    }
+    .buyBlock__paymentCardList {
+        display: flex;
+        flex-direction: row;
+    }
+    .buyBlock__shippingAvailable {
+        font-weight: 300;
+    }
+    .buyBlock__unitsQuantity__title {
+        font-weight: 300;
+    }
+    .buyBlock__buttons {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .buyBlock__buttons_buy, .buyBlock__buttons_add {
+        letter-spacing: -1px;
+        margin: 10px 0;
+        width: 100%;
+        height: 60px;
+    }
+    .buyResultBlock__title {
+        font-size: 20px;
+        color: #646464;
+        font-weight: 300;
+    }
+    .buyResultBlock__description__list {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #9292928a;
+    }
+    .buyResultBlock__ratings__item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #9292928a;
+    }
+    .buyResultBlock__ratings__item__description {
+        font-weight: 300;
+    }
+    .Dropdown-control-buy {
+        border: 1px solid #ccc;
+    }
+    .Dropdown-menu-buy .Dropdown-option {
+        height: 40px;
+    }
+}
