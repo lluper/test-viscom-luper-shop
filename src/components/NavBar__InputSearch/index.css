@@ -1,6 +1,6 @@
 .inputSearch{
     background: #fff;
-    width:auto;
+    min-width: 600px;
     display: flex;
     justify-content: space-between;
     box-shadow: 1px 1px 5px -1px #656464;
@@ -28,4 +28,35 @@
     padding: 5px;
     border-left: solid 1px #636363;
     height: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    .inputSearch{
+        background: #fff;
+        min-width: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 1px 1px 5px -1px #656464;
+        border-radius: 1px;
+        align-items: center;
+    }
+    .inputSearch_button{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .inputSearch{
+        background: #fff;
+        min-width: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 1px 1px 5px -1px #656464;
+        border-radius: 1px;
+        align-items: center;
+    }
+    .inputSearch_button{
+        display: none;
+    }
 }
