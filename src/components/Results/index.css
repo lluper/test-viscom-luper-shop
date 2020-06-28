@@ -1,0 +1,441 @@
+.resultSearchBlock {
+    width: 100%;
+    border-radius: 3px 0 0 3px;
+}
+.resultSearchBlock__filters{
+    display: none;
+}
+.resultSearchBlock__product {
+    position: relative;
+    display: flex;
+    background: var(--white);
+    min-height: 200px;
+    border-bottom: 1px solid #9b9b9b48;
+}
+
+.resultSearchBlock__product .resultSearchBlock__image {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultSearchBlock__product .resultSearchBlock__image>img {
+    width: auto;
+    height: 100%;
+}
+
+.resultSearchBlock__product .resultSearchBlock__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    justify-content: center;
+    background: var(--white);
+}
+
+.resultSearchBlock__description .resultSearchBlock__description__title {
+    margin-bottom: 20px;
+    color: var(--discoverText);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.resultSearchBlock__product .resultSearchBlock__description .resultSearchBlock__details__priceAndParceledAndShipping {}
+
+.resultSearchBlock__description__details {
+    width: 50%;
+}
+
+.resultSearchBlock__description .resultSearchBlock__description__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__price {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--discoverText);
+}
+
+.resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__parceled {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--grey-offer);
+}
+
+.resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__shipping {
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--green-primary);
+    text-transform: capitalize;
+}
+
+.resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__stars {}
+
+.resultSearchBlock__product:hover .resultSearchBlock__details__favorites {
+    display: block;
+}
+
+.resultSearchBlock__details__favorites {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: var(--blue-primary);
+    font-size: 20px;
+    display: none;
+}
+
+.resultSearchBlock__pagination {}
+
+.starRatingComponent {
+    font-size: 25px;
+}
+
+.pagination--pc {
+    display: flex !important; 
+}
+
+.pagination--mobile {
+    display: none !important; 
+}
+
+.pagination__innerClass {
+    margin-top: 50px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.pagination__itemClass {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    min-width: 50px;
+    height: 100%;
+    margin: 0 5px;
+    border: 1px solid #8080806b;
+    border-radius: 5px;
+}
+
+.pagination__itemClass:hover {
+    background: var(--button-blue);
+}
+
+.pagination__itemClass:hover .pagination__linkclass {
+    color: var(--white)
+}
+
+.pagination__linkclass {
+    color: var(--blue-primary)
+}
+
+.pagination__activeClass {
+    background: var(--blue-primary);
+}
+
+.pagination__activeLinkClass {
+    color: var(--white);
+}
+
+@media screen and (max-width: 992px) {
+    .resultSearchBlock__filters{
+        display: flex;  
+        width: 100%;
+        min-height: 50px;
+        align-items: center;
+        border-top: 1px solid #9b9b9b48;
+        border-bottom: 1px solid #9b9b9b48;
+        background: var(--white);
+    }
+    .resultSearchBlock__filters__list{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+    }
+    .resultSearchBlock__filters__list
+    .resultSearchBlock__filters__item{
+        flex:1;
+        list-style: none;
+        height: 100%;
+        border-left: 1px solid #9b9b9b48;
+    }
+    .resultSearchBlock__filters__list
+    .resultSearchBlock__filters__item:first-child{
+        border:none;
+    }
+    .resultSearchBlock__filters__link{
+        color: var(--blue-primary);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .resultSearchBlock__filters__icon{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .resultSearchBlock__product {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background: var(--white);
+        min-height: 200px;
+        max-height: 300px;
+        width: auto;
+        border-bottom: 1px solid #9b9b9b48;
+    }
+    .resultSearchBlock__product .resultSearchBlock__image {
+        width: 180px;
+        height: auto;
+        align-items: center;
+    }
+    .resultSearchBlock__product .resultSearchBlock__image>img {
+        width: 100%;
+        height: 150px;
+    }
+    .resultSearchBlock__product .resultSearchBlock__description {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 10px;
+        padding-right: 50px;
+        justify-content: flex-start;
+    }
+    .resultSearchBlock__description .resultSearchBlock__description__title {
+        margin-bottom: 5px;
+        color: var(--discoverText);
+        font-size: 15px;
+    }
+    .resultSearchBlock__product .resultSearchBlock__description .resultSearchBlock__details__priceAndParceledAndShipping {}
+    .resultSearchBlock__description__details {
+        width: 100%;
+    }
+    .resultSearchBlock__description .resultSearchBlock__description__details {
+        flex-direction: column-reverse;
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__price {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--discoverText);
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__parceled {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--grey-offer);
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__shipping {
+        margin-bottom: 5px;
+        font-weight: 100;
+        font-size: 14px;
+        color: var(--green-primary);
+        text-transform: capitalize;
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__stars {}
+    .resultSearchBlock__details__favorites {
+        top: 30px;
+        right: 20px;
+        display: block;
+    }
+
+    .pagination--pc{
+        display: none !important;
+    }
+    .pagination--mobile{
+        display: flex !important;
+    }
+    .resultSearchBlock__pagination {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .pagination__innerClass {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 40px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+    }
+    .pagination__itemClass {
+        display: flex;
+        height: 100%;
+        margin: 0 1px;
+        min-width: 30px; 
+    }
+    .pagination__itemClass:hover {
+        background: var(--button-blue);
+    }
+    .pagination__itemClass:hover .pagination__linkclass {
+        color: var(--white)
+    }
+    .pagination__linkclass {
+        color: var(--blue-primary)
+    }
+    .pagination__activeClass {
+        background: var(--blue-primary);
+    }
+    .pagination__activeLinkClass {
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resultSearchBlock__filters{
+        display: flex;  
+        width: 100%;
+        min-height: 50px;
+        align-items: center;
+        border-top: 1px solid #9b9b9b48;
+        border-bottom: 1px solid #9b9b9b48;
+        background: var(--white);
+    }
+    .resultSearchBlock__filters__list{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+    }
+    .resultSearchBlock__filters__list
+    .resultSearchBlock__filters__item{
+        flex:1;
+        list-style: none;
+        height: 100%;
+        border-left: 1px solid #9b9b9b48;
+    }
+    .resultSearchBlock__filters__list
+    .resultSearchBlock__filters__item:first-child{
+        border:none;
+    }
+    .resultSearchBlock__filters__link{
+        color: var(--blue-primary);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .resultSearchBlock__filters__icon{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .resultSearchBlock__product {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background: var(--white);
+        min-height: 200px;
+        max-height: 300px;
+        width: auto;
+        border-bottom: 1px solid #9b9b9b48;
+    }
+    .resultSearchBlock__product .resultSearchBlock__image {
+        width: 180px;
+        height: auto;
+        align-items: center;
+    }
+    .resultSearchBlock__product .resultSearchBlock__image>img {
+        width: 100%;
+        height: 150px;
+    }
+    .resultSearchBlock__product .resultSearchBlock__description {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 10px;
+        padding-right: 50px;
+        justify-content: flex-start;
+    }
+    .resultSearchBlock__description .resultSearchBlock__description__title {
+        margin-bottom: 5px;
+        color: var(--discoverText);
+        font-size: 15px;
+    }
+    .resultSearchBlock__product .resultSearchBlock__description .resultSearchBlock__details__priceAndParceledAndShipping {}
+    .resultSearchBlock__description__details {
+        width: 100%;
+    }
+    .resultSearchBlock__description .resultSearchBlock__description__details {
+        flex-direction: column-reverse;
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__price {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--discoverText);
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__parceled {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--grey-offer);
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__shipping {
+        margin-bottom: 5px;
+        font-weight: 100;
+        font-size: 14px;
+        color: var(--green-primary);
+        text-transform: capitalize;
+    }
+    .resultSearchBlock__details__priceAndParceledAndShipping .resultSearchBlock__details__stars {}
+    .resultSearchBlock__details__favorites {
+        top: 30px;
+        right: 20px;
+        display: block;
+    }
+
+    .pagination--pc{
+        display: none !important;
+    }
+    .pagination--mobile{
+        display: flex !important;
+    }
+    .resultSearchBlock__pagination {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .pagination__innerClass {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 40px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+    }
+    .pagination__itemClass {
+        display: flex;
+        height: 100%;
+        margin: 0 1px;
+        min-width: 30px; 
+    }
+    .pagination__itemClass:hover {
+        background: var(--button-blue);
+    }
+    .pagination__itemClass:hover .pagination__linkclass {
+        color: var(--white)
+    }
+    .pagination__linkclass {
+        color: var(--blue-primary)
+    }
+    .pagination__activeClass {
+        background: var(--blue-primary);
+    }
+    .pagination__activeLinkClass {
+        color: var(--white);
+    }
+}

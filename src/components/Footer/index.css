@@ -1,0 +1,130 @@
+footer {
+  background: var(--white);
+}
+
+.button__moreInformation {
+  width: auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__moreInformation:hover {
+  background: var(--grey-footer-viewMore);
+}
+
+.footer--hide {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-around;
+}
+
+.companyCategory {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyCategory__item__title {
+  list-style: none;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: var(--grey-footer-list-title);
+}
+
+.companyCategory__item {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.companyCategory__link {
+  color: var(--grey-offer);
+}
+
+.footer__bottom {
+  padding: 25px 100px;
+  display: flex;
+}
+
+.companyDescription {}
+
+.companyDataList {
+  display: flex;
+  flex-direction: row;
+}
+
+.companyDataListitem {
+  list-style: none;
+  margin: 10px;
+  margin-left: 0;
+  color: var(--grey-footer-list-title);
+}
+
+.footer__copyright, .footer__companyData {
+  color: var(--grey-offer);
+  font-size: 12px;
+}
+
+.footer__downloadApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.footer__downloadApp__button {
+  display: flex;
+  background: var(--yellow-primary);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--grey-offer);
+}
+
+@media screen and (max-width: 992px) {
+  .footer__downloadApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .footer__bottom {
+    padding: 25px 10px;
+    flex-direction: column-reverse;
+  }
+  .footer--hide, .button__moreInformation {
+    display: flex;
+  }
+  .companyCategory {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer__downloadApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .footer__bottom {
+    padding: 25px 10px;
+    flex-direction: column-reverse;
+  }
+  .footer--hide, .button__moreInformation {
+    display: none;
+  }
+  .companyCategory {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}

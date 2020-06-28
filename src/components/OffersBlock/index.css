@@ -1,0 +1,189 @@
+.offersBlock {
+  min-height: 450px;
+}
+
+.offersBlock__cardsContainer {
+  display: flex;
+  position: relative;
+}
+
+.offersBlock__card {
+  background: var(--white);
+  position: static;
+  flex: 1;
+  margin: 0 20px;
+  align-self: flex-start;
+  transition: .5s;
+}
+
+.offersBlock__card:first-child {
+  margin-left: 0;
+}
+
+.offersBlock__card:last-child {
+  margin-right: 0;
+}
+
+.offersBlock__card__header {
+  border-bottom: 1px solid #c7c7c78e;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.offersBlock__card__header > img {
+  height: 200px;
+  width: 100%;
+}
+.offersBlock__card__body {
+  padding: 10px 20px;
+}
+
+.offersBlock__card__productImage {
+  width: auto;
+  height: 100%;
+}
+
+.offersBlock__card__favorites {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.offersBlock__favorites__icon {
+  color: var(--blue-primary)
+}
+
+.offersBlock__card:hover .offersBlock__card__favorites {
+  display: block;
+}
+
+.offersBlock__card__discount {
+  text-decoration: line-through;
+  color: var(--grey-offer);
+  font-size: 15px;
+  display: none;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.offersBlock__card__price, .offersBlock__card__installmentAmount {
+  color: var(--discoverText);
+}
+
+.offersBlock__card__priceAndPercent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.offersBlock__card__price {
+  margin-bottom: 3px;
+}
+
+.offersBlock__card__discountPercent {
+  color: var(--green-primary);
+  margin-left: 10px;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.offersBlock__card__installmentAmount {}
+
+.offersBlock__card__productName {
+  margin-top: 20px;
+  display: none;
+  font-weight: 100;
+  color: var(--grey-offer);
+}
+
+.offersBlock__card:hover .offersBlock__card__discount {
+  display: block;
+}
+
+.offersBlock__card:hover .offersBlock__card__productName {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .offersBlock__cardsContainer {
+    flex-wrap: wrap;
+  }
+  .offersBlock__card__header {
+    border-bottom: none;
+    height: 100%;
+  }
+  .offersBlock__card__favorites, .offersBlock__card__discount, .offersBlock__card__productName/*  */
+  {
+    display: block;
+  }
+  .offersBlock__card__favorites {
+    right: 0px;
+    top:10px;
+  }
+  .offersBlock__card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    border: 1px solid #c7c7c78e;
+    align-items: center;
+  }
+  .offersBlock__card__productImage {
+    width: 150px;
+    max-width: 150px;
+    height: auto;
+  }
+  .offersBlock__card__header > img {
+    height: 200px;
+    width: 200px;
+  }
+  .offersBlock__card__productName {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .offersBlock__cardsContainer {
+    flex-wrap: wrap;
+  }
+  .offersBlock__card__header {
+    border-bottom: none;
+    height: 100%;
+  }
+  .offersBlock__card__favorites, .offersBlock__card__discount, .offersBlock__card__productName/*  */
+  {
+    display: block;
+  }
+  .offersBlock__card__favorites {
+    right: 0px;
+    top:10px;
+  }
+  .offersBlock__card {
+    margin: 0;
+    display: flex;
+    min-height: 150px;
+    border: 1px solid #c7c7c78e;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+  }
+  .offersBlock__card__productImage {
+    width: 150px;
+    max-width: 150px;
+    height: auto;
+  }
+  .offersBlock__card__header > img {
+    height: 200px;
+    width: 200px;
+  }
+  .offersBlock__card__productName {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}

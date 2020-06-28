@@ -1,0 +1,19 @@
+body{
+  background: var(--grey-background);
+}
+.pageHome__main{
+  padding: 25px 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .pageHome__main{
+    padding: 25px 50px;
+  }
+}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .pageHome__main{
+    padding: 25px 10px;
+  }
+}

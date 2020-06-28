@@ -1,0 +1,79 @@
+.carousel,.carouselProvider{
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel:hover .carouselButtonBack{
+    left:0;
+}
+.carousel:hover .carouselButtonNext{
+    right: 0;
+}
+.carouselButton{
+    position: absolute;
+    z-index: 10;
+    height: 100px;
+    width: 50px;
+    bottom: 25%;
+    top:25%;
+    background: #fff;
+    border:0;
+    font-size: 30px;
+    color: #000d86;
+}
+.carousel:focus,
+.carouselProvider:focus,
+.carouselButton:focus,
+.carousel__dot:focus,
+.slide:focus{
+    outline: none;
+    border: none;
+}
+.carouselButtonBack,.carouselButtonNext{
+    transition: .5s;
+}
+.carouselButtonBack{
+    left:-10%;
+    border-radius: 0 5px 5px 0;
+}
+.carouselButtonNext{
+    right: -10%;
+    border-radius:  5px 0 0 5px;
+}
+
+.dotGroup{
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 45%;
+}
+.carousel__dot{
+    padding: 3px;
+    margin: 10px;
+    border-radius: 20px;
+    border:none;
+    background: #cccccc;
+}
+.carousel__dot--selected{
+    padding: 5px;
+    background: #fff;
+}
+.carouselImage{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    min-height: 100%;
+}
+@media screen and (max-width: 992px) {
+
+}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .carousel ,.slide{
+        height: 150px;
+    }
+    .carouselButton{
+        display: none;
+    }
+}

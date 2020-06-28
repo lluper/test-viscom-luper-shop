@@ -1,0 +1,572 @@
+.buyConfirmBlock{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+.buyConfirmBlock__animated{
+    width: 50%;
+}
+.buyConfirmBlock__left{
+    background: #fff;
+    width: auto !important;
+    padding: 20px 30px;
+}
+.buyConfirmBlock__right{}
+.buyConfirmBlock__title{
+    text-transform: capitalize;
+    font-size: 25px;
+    color:#6b6b6b;
+}
+.buyConfirmBlock__address__form{width: 100%;}
+.form__group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important;
+    min-height: 80px;
+}
+.label__input{
+    margin-right: 20px;
+    text-transform: capitalize;
+    color: #242424;
+    margin-bottom: 20px;
+}
+.react-inputs-validation__textbox__input___20hDL {
+    background: var(--white) !important;
+    outline: none;
+    height: 50px;
+    width: 250px !important;
+}
+.buyConfirmBlock__address__form__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.buyConfirmBlock__address__submit{
+    text-transform: capitalize;
+    width: 50%;
+    margin: 20px 10px 0;
+    height: 50px;
+    border:none;
+    background: var(--blue-primary);
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.input_wrapper{}
+.input__container{}
+.form__group__card{
+    display: flex;
+    flex-direction: column;
+}
+.form__group__card__block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form__group__card__input__block{
+    display: flex;
+    flex-direction: column;
+}
+.form__group__card__input{
+    width: 250px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    display: block;
+    background: var(--white) !important;
+    outline: none;
+    height: 50px;
+    width: 250px !important;
+}
+
+.form__card__input__block{}
+.form__group__input__card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.form__group__input__card__label{
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-right: 10px;
+
+}
+.form__group__card__input{
+    width: 150px;
+    padding: 0 10px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+
+.buyConfirmBlock__right{
+    width: 40%;
+    background: #e6e6e677;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buyConfirmBlock__image__product{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.buyConfirmBlock__image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.buyConfirmBlock__product__header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-bottom: 1px solid #bdbdbd;
+}
+.buyConfirmBlock__product__title{
+    font-weight: 200;
+    color: #383838;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.buyConfirmBlock__product__quantity{
+    font-weight: 200;
+    color: #383838;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.buyConfirmBlock__product{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 30px 0;
+}
+.buyConfirmBlock__text{ 
+    color: #3a3a3a;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 17px;
+}
+.buyConfirmBlock__value{
+    color: #3a3a3a;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+.buyConfirmBlock__text__amountPaid{
+    color: #1d1d1d;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 20px;
+}
+.buyConfirmBlock__value__amountPaid{
+    color: #1d1d1d;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.rccs{
+   
+}
+@media screen and (max-width: 992px) {
+    .buyConfirmBlock__animated{
+        width: 100%;
+    }
+    .buyConfirmBlock{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin: 20px 0;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .buyConfirmBlock__left{
+        background: #fff;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .buyConfirmBlock__title{
+        text-transform: capitalize;
+        font-size: 25px;
+        color:#6b6b6b;
+        margin-bottom: 20px;
+    }
+    .buyConfirmBlock__address__form{width: 100%;}
+    .form__group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100% !important;
+        min-height: 80px;
+    }
+    .label__input{
+        margin-right: 20px;
+        text-transform: capitalize;
+        color: #242424;
+        margin-bottom: 20px;
+    }
+    .react-inputs-validation__textbox__input___20hDL {
+        background: var(--white) !important;
+        outline: none;
+        height: 50px;
+        width: 250px !important;
+    }
+    .buyConfirmBlock__address__form__buttons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .buyConfirmBlock__address__submit{
+        text-transform: capitalize;
+        width: 50%;
+        margin: 20px 10px 0;
+        height: 50px;
+        border:none;
+        background: var(--blue-primary);
+        border-radius: 4px;
+        color: var(--white);
+        font-weight: 200;
+        font-size: 20px;
+    }
+    
+    .input_wrapper{}
+    .input__container{}
+    .form__group__card{
+        display: flex;
+        flex-direction: column;
+    }
+    .form__group{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .form__group__card__block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form__group__card__input__block{
+        display: flex;
+        flex-direction: column;
+    }
+    .form__group__card__input{
+        height: 30px;
+    }
+    
+    .form__card__input__block{}
+    .form__group__input__card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 0;
+        
+    }
+    .form__group__input__card__label{
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-right: 10px;
+    
+    }
+    .form__group__card__input{
+        width: 250px;
+        padding: 0 10px;
+        border: 1px solid #e5e5e5;
+        display: block;
+        background: var(--white) !important;
+        outline: none;
+        height: 50px;
+        width: 250px !important;
+    
+    }
+    
+    
+    .buyConfirmBlock__right{
+        background: #fff;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(187, 187, 187) ;
+    }
+    .buyConfirmBlock__image__product{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+    .buyConfirmBlock__image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .buyConfirmBlock__product__header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        border-bottom: 1px solid #bdbdbd;
+    }
+    .buyConfirmBlock__product__title{
+        font-weight: 200;
+        color: #383838;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .buyConfirmBlock__product__quantity{
+        font-weight: 200;
+        color: #383838;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .buyConfirmBlock__product{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        border-bottom: 1px solid #bdbdbd;
+        padding: 30px 0;
+    }
+    .buyConfirmBlock__text{ 
+        color: #3a3a3a;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    .buyConfirmBlock__value{
+        color: #3a3a3a;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 100;
+    }
+    .buyConfirmBlock__text__amountPaid{
+        color: #1d1d1d;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 20px;
+    }
+    .buyConfirmBlock__value__amountPaid{
+        color: #1d1d1d;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 25px;
+    }
+    .rccs{
+        margin-top: 20px !important;
+        width: 50% !important;
+        
+    }
+    .rccs__card{
+        width: 100% !important;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .buyConfirmBlock__animated{
+        width: 100%;
+    }
+    .buyConfirmBlock{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin: 20px 0;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .buyConfirmBlock__left{
+        background: #fff;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .buyConfirmBlock__title{
+        text-transform: capitalize;
+        font-size: 25px;
+        color:#6b6b6b;
+    }
+    .buyConfirmBlock__address__form{width: 100%;}
+    .form__group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100% !important;
+        min-height: 80px;
+    }
+    .label__input{
+        margin-right: 20px;
+        text-transform: capitalize;
+        color: #242424;
+        margin-bottom: 20px;
+    }
+    .react-inputs-validation__textbox__input___20hDL {
+        background: var(--white) !important;
+        outline: none;
+        height: 50px;
+        width: 250px !important;
+    }
+    .buyConfirmBlock__address__form__buttons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .buyConfirmBlock__address__submit{
+        text-transform: capitalize;
+        width: 50%;
+        margin: 20px 10px 0;
+        height: 50px;
+        border:none;
+        background: var(--blue-primary);
+        border-radius: 4px;
+        color: var(--white);
+        font-weight: 200;
+        font-size: 20px;
+    }
+    
+    .input_wrapper{}
+    .input__container{}
+    .form__group__card{
+        display: flex;
+        flex-direction: column;
+    }
+    .form__group{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .form__group__card__block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form__group__card__input__block{
+        display: flex;
+        flex-direction: column;
+    }
+    .form__group__card__input{
+        height: 30px;
+    }
+    
+    .form__card__input__block{}
+    .form__group__input__card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
+    .form__group__input__card__label{
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-right: 10px;
+    
+    }
+    .form__group__card__input{
+        width: 150px;
+        padding: 0 10px;
+        border: 1px solid rgb(187, 187, 187);
+    }
+    
+    
+    .buyConfirmBlock__right{
+        background: #fff;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buyConfirmBlock__image__product{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+    .buyConfirmBlock__image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .buyConfirmBlock__product__header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        border-bottom: 1px solid #bdbdbd;
+    }
+    .buyConfirmBlock__product__title{
+        font-weight: 200;
+        color: #383838;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .buyConfirmBlock__product__quantity{
+        font-weight: 200;
+        color: #383838;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .buyConfirmBlock__product{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        border-bottom: 1px solid #bdbdbd;
+        padding: 30px 0;
+    }
+    .buyConfirmBlock__text{ 
+        color: #3a3a3a;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    .buyConfirmBlock__value{
+        color: #3a3a3a;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 100;
+    }
+    .buyConfirmBlock__text__amountPaid{
+        color: #1d1d1d;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 20px;
+    }
+    .buyConfirmBlock__value__amountPaid{
+        color: #1d1d1d;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 25px;
+    }
+    .rccs{
+        margin-top: 20px !important;
+        width: 100% !important;
+        
+    }
+    .rccs__card{
+        width: 100% !important;
+    }
+}
+
+
