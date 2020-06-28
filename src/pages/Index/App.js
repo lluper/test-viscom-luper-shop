@@ -13,8 +13,6 @@ import Footer from '../../components/Footer';
 import './App.css';
 
 
-
-
 function App() {
     return (
         <React.Fragment>
@@ -24,7 +22,7 @@ function App() {
                 <Slider />
             </header>
 
-            <main>
+            <main className="pageHome__main">
                 <PaymentMethodHeader />
                 <OffersBlock />
                 <DiscoverBlock />
