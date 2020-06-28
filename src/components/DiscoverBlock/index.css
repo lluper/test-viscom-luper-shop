@@ -1,85 +1,121 @@
-.discoverBlock{
+.discoverBlock {
+  min-height: 350px;
+}
+
+.discoverBlock__body {
+  display: flex;
+}
+
+.discoverBlock__card {
+  background: #fff;
+  display: flex;
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px 0 0 15px;
+}
+
+.discoverBlock__card:first-child {
+  margin-left: 0;
+}
+
+.discoverBlock__card:last-child {
+  margin-right: 0;
+}
+
+.discoverBlock__card__texts {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--discoverText);
+}
+
+.discoverBlock__card__secondTitle {
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.discoverBlock__card__title {
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.discoverBlock__card__button {
+  display: flex;
+  width: 100px;
+  height: 35px;
+  background: var(--button-blue);
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.discoverBlock__card__button:hover {
+  background: var(--button-blue-hover);
+}
+
+.discoverBlock__card__image {
+  flex: 1;
+  height: 100%;
+  width: 250px;
+}
+
+@media screen and (max-width: 992px) {
+  .discoverBlock {
     min-height: 350px;
   }
-  
-  .discoverBlock__body{
+  .discoverBlock__body {
     display: flex;
-  }
-  .discoverBlock__card{
-    background: #fff;
-    display: flex;
-    flex:1;
-    margin: 0 10px;
-    padding: 10px 0 0 15px ;
-  }
-  .discoverBlock__card:first-child{
-    margin-left: 0;
-  }
-  .discoverBlock__card:last-child{
-    margin-right: 0;
-  }
-  
-  .discoverBlock__card__texts{
-    width: 70%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-    color:var(--discoverText);
+    flex-wrap: wrap;
   }
-  .discoverBlock__card__secondTitle{
-    text-transform: uppercase;
-    line-height: 40px;
+  .discoverBlock__card {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    justify-content: space-between;
   }
-  .discoverBlock__card__title{
-    text-transform: uppercase;
-    line-height: 30px;
-    margin-bottom: 15px;
+  .discoverBlock__card:last-child {
+    margin-bottom: 0;
   }
-  .discoverBlock__card__button{
-    display: flex;
-    width: 100px;
-    height: 35px;
-    background: var(--button-blue);
-    color: var(--white);
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-    border-radius: 2px;
+  .discoverBlock__body {
+    flex-wrap: wrap;
   }
-  .discoverBlock__card__button:hover{
-    background: var(--button-blue-hover);
+  .discoverBlock__card__image {
+    flex: 1;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100px;
   }
-  .discoverBlock__card__image{
-    flex:1;
-    height: 100%;
-    width: 250px;
-  }
+}
 
-  @media screen and (max-width: 992px) {
-
+@media screen and (max-width: 600px) {
+  .discoverBlock__card {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    padding-right: 0;
   }
-    
-    /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    .discoverBlock__card{
-      margin: 0;
-      margin-bottom: 20px;
-      padding: 10px 15px ;
-      padding-bottom: 20px;
-      padding-right: 0;
-    }
-    .discoverBlock__card:last-child{
-      margin-bottom: 0;
-    }
-    .discoverBlock__body{
-      flex-wrap: wrap;
-    }
-    .discoverBlock__card__image{
-      flex:1;
-      height: auto;
-      max-height: 100%;
-      width: auto;
-      max-width: 100px;
-    }
+  .discoverBlock__card:last-child {
+    margin-bottom: 0;
   }
+  .discoverBlock__body {
+    flex-wrap: wrap;
+  }
+  .discoverBlock__card__image {
+    flex: 1;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100px;
+  }
+}
