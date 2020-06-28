@@ -20,7 +20,7 @@ export default function index() {
             <div className="offersBlock__cardsContainer">
                 <Link to="/buy" className="offersBlock__card">
                     <div className="offersBlock__card__header">
-                        <img src={Product1} className="offersBlock__card__productImage" />
+                        <img src={Product1} />
                         <span className="offersBlock__card__favorites">
                             <FontAwesomeIcon icon={faHeart} className="offersBlock__favorites__icon" />
                         </span>
@@ -29,19 +29,19 @@ export default function index() {
                         <h4 className="offersBlock__card__discount">R$100</h4>
 
                         <div className="offersBlock__card__priceAndPercent">
-                            <h3 className="offersBlock__card__price">R$96</h3>
+                            <h3 className="offersBlock__card__price">R$1329</h3>
                             <h4 className="offersBlock__card__discountPercent">9% off</h4>
                         </div>
-                        <h5 className="offersBlock__card__installmentAmount">12x R$10</h5>
+                        <h5 className="offersBlock__card__installmentAmount">12x R$130</h5>
                         <p className="offersBlock__card__productName">
-                            Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM
+                        Smartphone Samsung Galaxy A30s SM-A307G TV Digital 64GB
                         </p>
                     </div>
                 </Link>
 
-                <div className="offersBlock__card">
+                <Link to="/buy" className="offersBlock__card">
                     <div className="offersBlock__card__header">
-                        <img src={Product2} className="offersBlock__card__productImage" />
+                        <img src={Product1} />
                         <span className="offersBlock__card__favorites">
                             <FontAwesomeIcon icon={faHeart} className="offersBlock__favorites__icon" />
                         </span>
@@ -50,19 +50,19 @@ export default function index() {
                         <h4 className="offersBlock__card__discount">R$100</h4>
 
                         <div className="offersBlock__card__priceAndPercent">
-                            <h3 className="offersBlock__card__price">R$96</h3>
+                            <h3 className="offersBlock__card__price">R$1329</h3>
                             <h4 className="offersBlock__card__discountPercent">9% off</h4>
                         </div>
-                        <h5 className="offersBlock__card__installmentAmount">12x R$10</h5>
+                        <h5 className="offersBlock__card__installmentAmount">12x R$130</h5>
                         <p className="offersBlock__card__productName">
-                            Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM
+                        Smartphone Samsung Galaxy A30s SM-A307G TV Digital 64GB
                         </p>
                     </div>
-                </div>
+                </Link>
 
-                <div className="offersBlock__card">
+                <Link to="/buy" className="offersBlock__card">
                     <div className="offersBlock__card__header">
-                        <img src={Product3} className="offersBlock__card__productImage" />
+                        <img src={Product1} />
                         <span className="offersBlock__card__favorites">
                             <FontAwesomeIcon icon={faHeart} className="offersBlock__favorites__icon" />
                         </span>
@@ -71,19 +71,19 @@ export default function index() {
                         <h4 className="offersBlock__card__discount">R$100</h4>
 
                         <div className="offersBlock__card__priceAndPercent">
-                            <h3 className="offersBlock__card__price">R$96</h3>
+                            <h3 className="offersBlock__card__price">R$1329</h3>
                             <h4 className="offersBlock__card__discountPercent">9% off</h4>
                         </div>
-                        <h5 className="offersBlock__card__installmentAmount">12x R$10</h5>
+                        <h5 className="offersBlock__card__installmentAmount">12x R$130</h5>
                         <p className="offersBlock__card__productName">
-                            Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM
+                        Smartphone Samsung Galaxy A30s SM-A307G TV Digital 64GB
                         </p>
                     </div>
-                </div>
+                </Link>
 
-                <div className="offersBlock__card">
+                <Link to="/buy" className="offersBlock__card">
                     <div className="offersBlock__card__header">
-                        <img src={Product4} className="offersBlock__card__productImage" />
+                        <img src={Product1} />
                         <span className="offersBlock__card__favorites">
                             <FontAwesomeIcon icon={faHeart} className="offersBlock__favorites__icon" />
                         </span>
@@ -92,15 +92,15 @@ export default function index() {
                         <h4 className="offersBlock__card__discount">R$100</h4>
 
                         <div className="offersBlock__card__priceAndPercent">
-                            <h3 className="offersBlock__card__price">R$96</h3>
+                            <h3 className="offersBlock__card__price">R$ 1329,00</h3>
                             <h4 className="offersBlock__card__discountPercent">9% off</h4>
                         </div>
-                        <h5 className="offersBlock__card__installmentAmount">12x R$10</h5>
+                        <h5 className="offersBlock__card__installmentAmount">12x R$130</h5>
                         <p className="offersBlock__card__productName">
-                            Samsung Galaxy A20s Dual SIM 32 GB Azul 3 GB RAM
+                        Smartphone Samsung Galaxy A30s SM-A307G TV Digital 64GB
                         </p>
                     </div>
-                </div>
+                </Link>
 
             </div>
         </section>

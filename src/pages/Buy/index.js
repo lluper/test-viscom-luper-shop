@@ -20,7 +20,7 @@ import { faShippingFast } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom'
 
 export default function index() {
-    const rating = 1;
+    const rating = 4;
     const options = [
         '1', '2', '3', '4', '5'
     ];
@@ -32,29 +32,13 @@ export default function index() {
             thumbnail: 'https://a-static.mlcdn.com.br/618x463/smartphone-samsung-galaxy-s10-128gb-azul-4g-8gb-ram-61-cam-tripla-cam-selfie-10mp/magazineluiza/155551000/81fbf6699b9b3c9ef11231360c6d17a8.jpg',
         },
         {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            original: 'https://www.imgeletro.com.br/900x900/produto/1305416_14098304_20191122164824.jpg',
+            thumbnail: 'https://www.imgeletro.com.br/900x900/produto/1305416_14098304_20191122164824.jpg',
         },
         {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
+            original: 'https://www.imgeletro.com.br/900x900/produto/1305416_14098308_20191122164840.jpg',
+            thumbnail: 'https://www.imgeletro.com.br/900x900/produto/1305416_14098308_20191122164840.jpg',
+        }
     ];
     return (
         <React.Fragment>
@@ -78,7 +62,6 @@ export default function index() {
                         <h2 className="buyResultBlock__title">
                             Mais anúncios do vendedor
                         </h2>
-                            cards
                         <a href="#" className="buyResultBlock__link">
                             ver mais anúncios do vendedor
                         </a>
@@ -90,37 +73,47 @@ export default function index() {
                         <ul className="buyResultBlock__specification__list">
                             <li className="buyResultBlock__specification__item">
                                 <h4 className="buyResultBlock__specification__item__title">Marca:</h4>
-                                <h2 className="buyResultBlock__specification__item__value">Extra Power</h2>
+                                <h2 className="buyResultBlock__specification__item__value">Samsung</h2>
                             </li>
-
                             <li className="buyResultBlock__specification__item">
                                 <h4 className="buyResultBlock__specification__item__title">Modelo:</h4>
-                                <h2 className="buyResultBlock__specification__item__value">13</h2>
+                                <h2 className="buyResultBlock__specification__item__value">SM-A307G</h2>
                             </li>
-
                             <li className="buyResultBlock__specification__item">
-                                <h4 className="buyResultBlock__specification__item__title">Tamanho da pilha:</h4>
-                                <h2 className="buyResultBlock__specification__item__value">pequena</h2>
+                                <h4 className="buyResultBlock__specification__item__title">Linha:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">Galaxy</h2>
                             </li>
-
                             <li className="buyResultBlock__specification__item">
-                                <h4 className="buyResultBlock__specification__item__title">Forma:</h4>
-                                <h2 className="buyResultBlock__specification__item__value">Botão</h2>
+                                <h4 className="buyResultBlock__specification__item__title">Série:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">A30s</h2>
                             </li>
-
                             <li className="buyResultBlock__specification__item">
-                                <h4 className="buyResultBlock__specification__item__title">Formato de venda:</h4>
-                                <h2 className="buyResultBlock__specification__item__value">Unidade</h2>
+                                <h4 className="buyResultBlock__specification__item__title">Tipo de Aparelho:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">Smartphone</h2>
                             </li>
-
                             <li className="buyResultBlock__specification__item">
-                                <h4 className="buyResultBlock__specification__item__title">Voltagem nominal</h4>
-                                <h2 className="buyResultBlock__specification__item__value">1.45</h2>
+                                <h4 className="buyResultBlock__specification__item__title">Quantidade de Chip:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">2 Chips</h2>
                             </li>
-
                             <li className="buyResultBlock__specification__item">
-                                <h4 className="buyResultBlock__specification__item__title">Recarregável</h4>
-                                <h2 className="buyResultBlock__specification__item__value">nãos</h2>
+                                <h4 className="buyResultBlock__specification__item__title">Tipo de Tela:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">Super AMOLED</h2>
+                            </li>
+                            <li className="buyResultBlock__specification__item">
+                                <h4 className="buyResultBlock__specification__item__title">Tamanho da Tela:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">6,4 Polegadas</h2>
+                            </li>
+                            <li className="buyResultBlock__specification__item">
+                                <h4 className="buyResultBlock__specification__item__title">Resolução da Tela:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">HD+</h2>
+                            </li>
+                            <li className="buyResultBlock__specification__item">
+                                <h4 className="buyResultBlock__specification__item__title">Sistema operacional:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">Android 9.0 (Pie)</h2>
+                            </li>
+                            <li className="buyResultBlock__specification__item">
+                                <h4 className="buyResultBlock__specification__item__title">Sistema operacional:</h4>
+                                <h2 className="buyResultBlock__specification__item__value">Android 9.0 (Pie)</h2>
                             </li>
                         </ul>
                     </div>
@@ -130,13 +123,10 @@ export default function index() {
 
                         <ul className="buyResultBlock__description__list">
                             <li className="buyResultBlock__description__item">
-                                <h4 className="buyResultBlock__description__item__title">DADOS TÉCNICOS</h4>
+                                <h4 className="buyResultBlock__description__item__title">DESCRIÇÃO</h4>
                                 <p className="buyResultBlock__description__item__value">
-                                    -Tensão: 1,45 V <br />
-                                    -Sistema Eletroquímico: ZINCO-AR <br />(zinc-air)<br />
-                                    -Capacidade típica: 180 mAh<br />
-                                    -Largura x Altura:<br />
-                                    -Peso: 0,58g<br />
+                                O Galaxy A30S é um celular da Samsung lançado em outubro de 2019.<br />
+                                O smartphone tem como destaque a fotografia. Conta com câmera tripla e foco dinâmico e composições automáticas de cenas para melhorar as imagens. O conjunto fotográfico do A30S possui um sensor com 25 megapixels, outro com 8 MP e um terceiro com 5 MP. Além disso, tem tela de 6,4 polegadas, processador octa-core, 4 GB de memória RAM, 64 GB de espaço interno e bateria de 4.000 mAh. O celular sai de fábrica com Android 9 (Pie). Ele está disponível nas cores preto, violeta e branco.
                                 </p>
                             </li>
                         </ul>
@@ -173,7 +163,7 @@ export default function index() {
                                     Bom
                                 </h3>
                                 <p className="buyResultBlock__ratings__item__description">
-                                    Bom dia amigos! como são pilhas para o meu aparelho de ouvido ainda não comecei a usar !! assim me desculpa !! mas a marca delas são usadas por amigos meus e eles que me indicaram.
+                                Muito bom
                                 </p>
                             </li>
                             <li className="buyResultBlock__ratings__item">
@@ -225,7 +215,7 @@ export default function index() {
                                     Bom
                                 </h3>
                                 <p className="buyResultBlock__ratings__item__description">
-                                    Bom dia amigos! como são pilhas para o meu aparelho de ouvido ainda não comecei a usar !! assim me desculpa !! mas a marca delas são usadas por amigos meus e eles que me indicaram.
+                                Maravilhoso
                                 </p>
                             </li>
 
@@ -249,9 +239,6 @@ export default function index() {
                         </ul>
                     </div>
 
-                    perguntas
-
-
                 </div>
 
 
@@ -271,7 +258,7 @@ export default function index() {
                         </div>
                         <h4 className="buyBlock__productState">Novo</h4>
                         <h2 className="buyBlock__productName">
-                            60 Pilhas Baterias Aparelho Auditivo Modelo 13 - Extrapower
+                            Smartphone Samsung Galaxy A30s SM-A307G TV Digital 64GB
                         </h2>
                         <StarRatingComponent
                             name="a"
@@ -282,7 +269,7 @@ export default function index() {
                             editing={false}
                             className="buyBlock__productStar"
                         />
-                        <h3 className="buyBlock__productPrice">R$ 89,90</h3>
+                        <h3 className="buyBlock__productPrice">R$ 1329,00</h3>
 
                         <div className="buyBlock__typePayment">
                             <FontAwesomeIcon icon={faCreditCard} className="buyBlock__icon" />

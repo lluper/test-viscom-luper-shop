@@ -30,7 +30,10 @@
   position: relative;
   justify-content: center;
 }
-
+.offersBlock__card__header > img {
+  height: 200px;
+  width: 100%;
+}
 .offersBlock__card__body {
   padding: 10px 20px;
 }
@@ -123,14 +126,19 @@
   .offersBlock__card {
     margin: 0;
     display: flex;
+    flex-direction: column;
     min-height: 150px;
     border: 1px solid #c7c7c78e;
     align-items: center;
   }
   .offersBlock__card__productImage {
-    width: auto;
+    width: 150px;
     max-width: 150px;
     height: auto;
+  }
+  .offersBlock__card__header > img {
+    height: 200px;
+    width: 200px;
   }
   .offersBlock__card__productName {
     margin-bottom: 20px;
@@ -166,9 +174,13 @@
     align-items: center;
   }
   .offersBlock__card__productImage {
-    width: auto;
+    width: 150px;
     max-width: 150px;
     height: auto;
+  }
+  .offersBlock__card__header > img {
+    height: 200px;
+    width: 200px;
   }
   .offersBlock__card__productName {
     margin-bottom: 20px;

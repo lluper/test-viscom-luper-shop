@@ -34,15 +34,15 @@ export default function index() {
             <NavBarMobile />
 
             <main className="buyConfirmBlock">
-                {page === 0 && <Animated animationIn="fadeIn" animationOut="fadeOutRight" animationInDuration={500} animationOutDuration={500}>
+                {page === 0 && <Animated className="buyConfirmBlock__animated" animationIn="fadeIn" animationOut="fadeOutRight" animationInDuration={500} animationOutDuration={500}>
                     <PersonData nextPage={NextPage} />
                 </Animated>}
 
-                {page === 1 && <Animated animationIn="fadeInLeft" animationOut="fadeOutRight" animationInDuration={500} animationOutDuration={500} >
+                {page === 1 && <Animated  className="buyConfirmBlock__animated" animationIn="fadeInLeft" animationOut="fadeOutRight" animationInDuration={500} animationOutDuration={500} >
                     <Adress nextPage={NextPage} prevPage={PrevPage} />
                 </Animated>}
 
-                {page === 2 && <Animated animationIn="fadeInLeft" animationOut="fadeOutRight" animationInDuration={500} animationOutDuration={500} >
+                {page === 2 && <Animated  className="buyConfirmBlock__animated" animationIn="fadeInLeft" animationOut="fadeOutRight" animationInDuration={500} animationOutDuration={500} >
                     <PaymentMethod nextPage={NextPage} prevPage={PrevPage} />
                 </Animated>}
 

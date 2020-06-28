@@ -21,7 +21,9 @@
     margin-bottom: 40px;
     display: block;
 }
-
+.image-gallery-content.left .image-gallery-slide .image-gallery-image, .image-gallery-content.right .image-gallery-slide .image-gallery-image {
+    max-height: 50vh; 
+}
 .buyResultBlock__image__product--mobile {
     display: none;
 }
@@ -365,6 +367,9 @@
 }
 
 @media screen and (max-width: 992px) {
+    .image-gallery-content.left .image-gallery-slide .image-gallery-image, .image-gallery-content.right .image-gallery-slide .image-gallery-image {
+        max-height: 100vh; 
+    }
     .buyResultBlock {
         background: var(--white);
         border: 0px solid #a0a0a079;
@@ -465,6 +470,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    .image-gallery-content.left .image-gallery-slide .image-gallery-image, .image-gallery-content.right .image-gallery-slide .image-gallery-image {
+        max-height: 100vh; 
+    }
     .buyResultBlock {
         background: var(--white);
         border: 0px solid #a0a0a079;
@@ -500,7 +508,7 @@
         min-height: 350px;
     }
     .buyResultBlock__image__product--mobile .image-gallery-slide {
-        height: 250px;
+        height: auto;
         display: flex;
         align-items: center;
     }
